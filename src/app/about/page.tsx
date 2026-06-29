@@ -9,9 +9,9 @@ export default function AboutPage() {
       <main className="flex-grow">
         {/* Hero Section */}
         <section className="relative py-20 px-margin-mobile md:px-margin-desktop overflow-hidden bg-surface-container-lowest">
-          <div 
-            className="absolute inset-0 opacity-30 pointer-events-none" 
-            style={{ 
+          <div
+            className="absolute inset-0 opacity-30 pointer-events-none"
+            style={{
               backgroundImage: 'radial-gradient(var(--color-outline-variant) 1px, transparent 1px)',
               backgroundSize: '24px 24px'
             }}
@@ -28,7 +28,7 @@ export default function AboutPage() {
                 The IEEE Student Branch is a hub for technical excellence, professional development, and collaborative innovation. We bridge the gap between academic theory and real-world engineering challenges.
               </p>
             </div>
-            <div className="relative">
+            <div className="relative max-w-md mx-auto md:max-w-full lg:max-w-md">
               <div className="absolute -inset-4 bg-primary-container/5 rounded-2xl transform rotate-3"></div>
               <Image
                 src="/images/about_students.png"
