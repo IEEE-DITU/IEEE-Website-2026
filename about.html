@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us - IEEE Student Branch</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#414750",
+                        "secondary-fixed-dim": "#b5c9dc",
+                        "on-primary-fixed": "#001d33",
+                        "surface-variant": "#e0e3e5",
+                        "error": "#ba1a1a",
+                        "tertiary": "#004d61",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary": "#4d6171",
+                        "outline-variant": "#c0c7d1",
+                        "inverse-on-surface": "#eff1f3",
+                        "inverse-surface": "#2d3133",
+                        "inverse-primary": "#98cbff",
+                        "on-primary-fixed-variant": "#004a77",
+                        "on-secondary-fixed-variant": "#364958",
+                        "surface-container": "#eceef0",
+                        "on-secondary-fixed": "#091d2b",
+                        "surface": "#f7f9fb",
+                        "tertiary-fixed-dim": "#5cd4ff",
+                        "on-surface": "#191c1e",
+                        "primary": "#004976",
+                        "surface-dim": "#d8dadc",
+                        "background": "#f7f9fb",
+                        "surface-bright": "#f7f9fb",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed": "#d1e5f8",
+                        "on-tertiary": "#ffffff",
+                        "surface-tint": "#02639c",
+                        "secondary-container": "#cee2f6",
+                        "surface-container-low": "#f2f4f6",
+                        "surface-container-high": "#e6e8ea",
+                        "tertiary-fixed": "#baeaff",
+                        "tertiary-container": "#006681",
+                        "on-background": "#191c1e",
+                        "on-primary-container": "#badbff",
+                        "primary-fixed-dim": "#98cbff",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-error": "#ffffff",
+                        "on-tertiary-container": "#9be1ff",
+                        "on-secondary-container": "#526575",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#004d62",
+                        "on-tertiary-fixed": "#001f29",
+                        "outline": "#717881",
+                        "primary-fixed": "#cee5ff",
+                        "primary-container": "#00629b",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Poppins"],
+                        "body-md": ["Poppins"],
+                        "headline-md": ["Poppins"],
+                        "headline-lg-mobile": ["Poppins"],
+                        "headline-xl": ["Poppins"],
+                        "headline-lg": ["Poppins"],
+                        "label-md": ["Poppins"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Poppins', sans-serif; background-color: theme('colors.background'); color: theme('colors.on-background'); }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .dot-matrix-bg {
+            background-image: radial-gradient(theme('colors.outline-variant') 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+<!-- TopNavBar Component -->
+<header class="bg-surface dark:bg-inverse-surface border-b-2 border-primary dark:border-primary-fixed shadow-sm sticky top-0 z-50 w-full">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex items-center gap-4">
+<img alt="IEEE Student Branch logo" class="h-10 w-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyLQK8n3eMkpEH9I-bynxKMSZVQ-a6VwN5cZvdADTZNXGcFbdGLsNJ1-Kf1HcR2li4Dv7BZV8uLUnlKQzF2kJnBA5QhR9AnlTbG4bkErN0FtYS63SSiZisw0THlapnMgpwbh8FLbKtuuGhvLGnx2YX2ettZOSL34jsFJDI5sWUZ693WGrTlwHQkuSEHn1_-bV8xSwxoYM3AdYjbORNo6VD4SZ6SEwMXSsjlOhT2E9BH1fz3kYLnIq4s7gk9IC4muMIc9N54U7ZSHk"/>
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-primary hidden sm:block">IEEE Student Branch</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Home</a>
+<a aria-current="page" class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary pb-1 font-body-md text-body-md" href="#">About</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Events</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="md:hidden text-on-surface hover:text-primary">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+<div class="hidden sm:flex relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container-low border border-outline-variant rounded-md focus:border-primary focus:ring-1 focus:ring-primary transition-all text-body-md font-body-md w-48" placeholder="Search..." type="text"/>
+</div>
+<button class="bg-primary-container text-on-primary font-body-md text-body-md px-6 py-2 rounded-md hover:bg-primary transition-colors font-semibold">Join Now</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative py-20 px-margin-mobile md:px-margin-desktop overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 dot-matrix-bg opacity-30 pointer-events-none"></div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="relative z-10">
+<span class="inline-block px-3 py-1 bg-secondary-container text-primary-container rounded-full font-label-md text-label-md mb-6 uppercase tracking-wider">About Us</span>
+<h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-surface mb-6">Empowering the Next Generation of Innovators.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-xl">
+                        The IEEE Student Branch is a hub for technical excellence, professional development, and collaborative innovation. We bridge the gap between academic theory and real-world engineering challenges.
+                    </p>
+</div>
+<div class="relative">
+<div class="absolute -inset-4 bg-primary-container/5 rounded-2xl transform rotate-3"></div>
+<img alt="Students collaborating on a robotics project in a bright modern lab setting" class="relative z-10 w-full h-auto object-cover rounded-xl shadow-lg border border-outline-variant/30" data-alt="A high-contrast, modern photograph of engineering students collaborating intently on a complex robotics project in a brightly lit, state-of-the-art laboratory. The scene features metallic components, circuit boards, and advanced tools spread across a clean workbench. The lighting is crisp and professional, reflecting a tech-forward, light-mode aesthetic with a subtle, cool corporate blue tint dominating the shadows and highlights to evoke innovation and academic rigor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW6Iwm4_YQmSYZ40kYZ3o8_o1iE-x8zBBq0IeA4rBx0GxaKahB9dKKRQ-Q5C4HNS0DASdjZKZahgqzn61Mhpgi_-g8aUMStM-a5sotzuDhCXYts-XopvQjaIGoZRZknKW4ZxfZ2aL1SzuOMwmoFRcBT_qCjDEu3szEcGK6BiWfqYWjRZPJ2hj1Slg3QME9yiC778tRyJTlNar4Ggw6rfEahQ_j5-Xhk2pGbuvXyllmRNR4cE7NPeSTwRaZN83aY6hhl0HXapYPePA"/>
+</div>
+</div>
+</section>
+<!-- Mission & Vision Bento Grid -->
+<section class="py-20 px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Mission Card -->
+<div class="col-span-1 md:col-span-2 bg-surface rounded-xl p-8 shadow-sm border border-outline-variant/50 hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity transform group-hover:scale-110 duration-500">
+<span class="material-symbols-outlined text-9xl text-primary" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">target</span>
+                            Our Mission
+                        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant relative z-10 max-w-2xl">
+                            To foster technological innovation and excellence for the benefit of humanity by providing students with hands-on experience, professional networking opportunities, and a platform to explore emerging technologies in electrical and electronics engineering.
+                        </p>
+</div>
+<!-- Vision Card -->
+<div class="col-span-1 bg-primary text-on-primary rounded-xl p-8 shadow-sm relative overflow-hidden">
+<div class="absolute -bottom-10 -right-10 opacity-20">
+<span class="material-symbols-outlined text-9xl" style="font-variation-settings: 'FILL' 1;">visibility</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg mb-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-2xl">lightbulb</span>
+                            Our Vision
+                        </h2>
+<p class="font-body-md text-body-md text-on-primary/90 relative z-10">
+                            To be the premier student-led technical organization, recognized globally for producing well-rounded engineers equipped to lead and solve the complex technical challenges of tomorrow.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Who We Are / Initiatives Section -->
+<section class="py-20 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-surface mb-4"><span class="material-symbols-outlined text-primary text-3xl align-middle mr-3">groups</span>Who We Are</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                        We are a community of passionate builders, thinkers, and problem solvers dedicated to continuous technical growth.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Initiative 1 -->
+<div class="bg-surface rounded-xl border border-outline-variant/40 shadow-sm hover:shadow-md transition-shadow group flex flex-col h-full">
+<div class="h-48 overflow-hidden rounded-t-xl relative">
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply z-10"></div>
+<img alt="Students in a technical workshop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A crisp, corporate-style photograph of university students actively participating in a technical workshop, focused on laptop screens and breadboards. The environment is a clean, well-lit modern classroom with white walls and subtle tech equipment in the background. The lighting is bright and even, highlighting a collaborative and focused atmosphere, with a slight digital blue tint enhancing the professional engineering aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEBneTZqfiN5JpMH-mFGaxIrLttd9uFQT2q9x19SuOwZ9C8S08H-x8DEN_jiF9ZtvMk_nFg7doDVCU2tS9lKUwfmPTb1PuTfXohqm8cLLJffXOUsN3rPc_iRsaJ66Hx7GVn9Oj_SoU8T49cMs7m9YPJD1Zdp9Bpsk3xYD-7I3R--mQSsOVRZZL7U7HIH1c1TWi48tk3SX-620QGBpzk36znA1L-ayhtuNiTSmdrsenpv16UxtPKs4eF3cCv-hKiwp8mcxLnGclnCE"/>
+</div>
+<div class="p-6 flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3"><span class="material-symbols-outlined text-primary text-2xl align-middle mr-2">precision_manufacturing</span>Technical Workshops</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                Regular hands-on sessions covering PCB design, microcontroller programming, AI/ML fundamentals, and CAD modeling to build practical skills.
+                            </p>
+</div>
+</div>
+<!-- Initiative 2 -->
+<div class="bg-surface rounded-xl border border-outline-variant/40 shadow-sm hover:shadow-md transition-shadow group flex flex-col h-full">
+<div class="h-48 overflow-hidden rounded-t-xl relative">
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply z-10"></div>
+<img alt="Students presenting a project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A professional, light-mode photograph capturing a team of diverse engineering students presenting a complex technical project on a large display screen in a modern conference room. The atmosphere is professional and academic, characterized by clean lines, ample whitespace, and focused, natural lighting that emphasizes clear communication and innovative leadership within a corporate tech environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuATij6gi11LM1cviiPOtM7BkOYpyRKAPQk4Up2x930S5pIFLgyLZXmc2U_ILmJR5_V9VqKs8Lz_R6M8uaQE92a_Y7KbfNTmK6gZ4x0ecz4u-21pTRa9OLyWWF3foLAmCSPcjCX9kdvvu_OjSAF9cl2W6-uZGV8OMtwYXc4lOuMrWz2jhXsyimiHKzQ5kV6VFCpjuFKDhjvRoQOFszqkNMWmQA5ZNhSxKmV-dgh-z0ARf37-0fX_MSxGjTt8y0qitti0dlkcg-zQeWU"/>
+</div>
+<div class="p-6 flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3"><span class="material-symbols-outlined text-primary text-2xl align-middle mr-2">architecture</span>Project Development</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                Collaborative, student-led projects ranging from autonomous rovers to smart grid simulations, taking ideas from concept to functional prototypes.
+                            </p>
+</div>
+</div>
+<!-- Initiative 3 -->
+<div class="bg-surface rounded-xl border border-outline-variant/40 shadow-sm hover:shadow-md transition-shadow group flex flex-col h-full">
+<div class="h-48 overflow-hidden rounded-t-xl relative">
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply z-10"></div>
+<img alt="Large tech conference audience" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A wide-angle, high-resolution shot of an engaged audience at a modern technology conference or symposium. The scene features rows of attentive attendees in a spacious, well-lit auditorium with a sleek, minimalist design. The lighting is bright and crisp, casting a professional and authoritative tone, emphasizing a large-scale academic and industry networking event without heavy shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1Z18WmW1Piadmv06Vouhr9aUU_b9bCaJzbcM0Gj3Recf9aNI3OsVVI7uRw0Y5qZldmt08AqvN3BNx40YWw9EPWHSzljfKA5alOqDCCgKbb2ygp-e8y3jBvyAJ5feGVGx8Ex83LK0P9OcrKD9PHxXFnvGswhXzU9kvsuxVr9il4dExyvNOChyHkJ-_T_Jlytm4chLaVloWfqcr1vraca-P3WAkJumOZNJulvJPRhC1eCcE-PJ6W-N32F38yYn5pByh17PdYVZHeL0"/>
+</div>
+<div class="p-6 flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3"><span class="material-symbols-outlined text-primary text-2xl align-middle mr-2">handshake</span>Industry Networking</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                Connecting students with industry professionals through guest lectures, tech talks, and annual symposiums to jumpstart careers.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface border-t border-outline-variant mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter py-12 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface dark:text-inverse-on-surface block mb-4">IEEE Student Branch</span>
+<p class="font-label-md text-label-md text-on-surface-variant mb-6">Empowering students through technology and innovation.</p>
+<div class="flex gap-4">
+<a aria-label="LinkedIn" class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-opacity" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a aria-label="Twitter" class="text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-opacity" href="#">
+<span class="material-symbols-outlined">chat</span>
+</a>
+</div>
+</div>
+<div class="col-span-1 md:col-span-2 flex flex-col sm:flex-row gap-8 sm:gap-16 justify-center">
+<div>
+<h4 class="font-label-md text-label-md font-bold text-on-surface mb-4 uppercase tracking-wider">Resources</h4>
+<ul class="flex flex-col gap-2">
+<li><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-opacity" href="#">IEEE.org</a></li>
+<li><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-opacity" href="#">Contact Support</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-on-surface mb-4 uppercase tracking-wider">Legal</h4>
+<ul class="flex flex-col gap-2">
+<li><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-opacity" href="#">Privacy Policy</a></li>
+<li><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-opacity" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="col-span-1 md:col-span-1 flex flex-col justify-end items-start md:items-end mt-8 md:mt-0">
+<p class="font-label-md text-label-md text-primary dark:text-primary-fixed-dim">
+                    © 2024 IEEE Student Branch. All rights reserved.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>
