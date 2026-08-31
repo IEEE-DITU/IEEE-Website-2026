@@ -15,8 +15,8 @@ export default function NavBar() {
   ];
 
   return (
-    <nav className="bg-surface border-b-2 border-primary shadow-sm w-full sticky top-0 z-50">
-      <div className="flex justify-between items-center h-[59px] px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+    <nav className="bg-surface shadow-sm w-full sticky top-0 z-50">
+      <div className="flex justify-between items-center h-[59px] px-margin-mobile md:px-margin-desktop w-full">
         {/* Brand Logo */}
         <div className="flex items-center gap-4">
           <div className="h-10 w-10 flex items-center justify-center overflow-hidden rounded-full border border-outline-variant bg-surface-container-lowest">
@@ -48,16 +48,7 @@ export default function NavBar() {
 
         {/* Trailing Action & Search */}
         <div className="flex items-center gap-4">
-          <div className="relative hidden sm:block">
-            <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline-variant">
-              search
-            </span>
-            <input
-              className="bg-surface-container-low border border-outline-variant rounded-full py-2 pl-10 pr-4 text-body-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all w-48"
-              placeholder="Search..."
-              type="text"
-            />
-          </div>
+
           <button className="bg-primary-container text-on-primary rounded-md px-6 py-2 font-label-md text-label-md font-semibold hover:bg-primary transition-colors whitespace-nowrap shadow-sm">
             Join Now
           </button>
